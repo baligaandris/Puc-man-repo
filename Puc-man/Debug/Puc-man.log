@@ -1,0 +1,39 @@
+﻿  cRocket.cpp
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(39): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(40): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(72): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(73): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  cGame.cpp
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(56): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(75): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(139): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(141): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(148): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  AsteroidsSDL.cpp
+  Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man\Debug\Puc-man.exe
+  Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man\Debug\Puc-man.pdb (Partial PDB)
+  copying SDL2.dll to debug directory
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2-2.0.4\lib\x86\SDL2.dll
+  1 File(s) copied
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_image-2.0.1\lib\x86\libjpeg-9.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_image-2.0.1\lib\x86\libpng16-16.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_image-2.0.1\lib\x86\libtiff-5.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_image-2.0.1\lib\x86\libwebp-4.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_image-2.0.1\lib\x86\SDL2_image.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_image-2.0.1\lib\x86\zlib1.dll
+  6 File(s) copied
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_ttf-2.0.14\lib\x86\libfreetype-6.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_ttf-2.0.14\lib\x86\zlib1.dll
+  3 File(s) copied
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_mixer-2.0.1\lib\x86\libFLAC-8.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_mixer-2.0.1\lib\x86\libmodplug-1.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_mixer-2.0.1\lib\x86\libogg-0.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_mixer-2.0.1\lib\x86\libvorbis-0.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_mixer-2.0.1\lib\x86\libvorbisfile-3.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_mixer-2.0.1\lib\x86\SDL2_mixer.dll
+  C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2_mixer-2.0.1\lib\x86\smpeg2.dll
+  7 File(s) copied
