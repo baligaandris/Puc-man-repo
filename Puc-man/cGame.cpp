@@ -93,7 +93,7 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 		for (int row = 0; row < 10; row++)
 		{
 			theNodes[column].push_back(new Node);
-			theNodes[column][row]->setSpritePos({ 100+ 100 * (column), 100+ 100*(row) });
+			theNodes[column][row]->setSpritePos({ 100+ 64 * (column), 100+ 64*(row) });
 			//theAsteroids[astro]->setSpriteTranslation({ (rand() % 8 + 1), (rand() % 8 + 1) });
 			int randAsteroid = rand() % 4;
 			theNodes[column][row]->setTexture(theTextureMgr->getTexture("node"));

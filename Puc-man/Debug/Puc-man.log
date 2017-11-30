@@ -1,20 +1,12 @@
-﻿  cRocket.cpp
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(39): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(40): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(72): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\crocket.cpp(73): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  cGame.cpp
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(56): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(63): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(75): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(139): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(141): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man\puc-man\cgame.cpp(148): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  AsteroidsSDL.cpp
-  Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man\Debug\Puc-man.exe
-  Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man\Debug\Puc-man.pdb (Partial PDB)
+﻿  cGame.cpp
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(56): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(63): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(75): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(139): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(141): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(148): warning C4018: '<': signed/unsigned mismatch
+  Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man-repo\Debug\Puc-man.exe
+  Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man-repo\Debug\Puc-man.pdb (Partial PDB)
   copying SDL2.dll to debug directory
   C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\SDL2\SDL2-2.0.4\lib\x86\SDL2.dll
   1 File(s) copied
