@@ -167,6 +167,7 @@ void cSprite::setSpriteScale(FPoint sScale)  // set the sprites current scaling
 {
 	this->spriteScale.X += sScale.X;
 	this->spriteScale.Y += sScale.Y;
+
 }
 /*
 =================
@@ -213,8 +214,7 @@ void cSprite::setSpriteRotAngle(float angle)  // set the sprites current scaling
 void cSprite::setBoundingRect(SDL_Rect pRect)
 {
 	SDL_Point sPos = { this->getSpritePos().x, this->getSpritePos().y };
-	this->boundingRect = { sPos.x, sPos.y, this->getSpritePos().w, this->getSpritePos().h }; //(pRect, sPos.x - m_Radius, sPos.y - m_Radius, (textureWidth / 2 + sPos.x), (textureHeight / 2 + sPos.y));
-
+	this->boundingRect = { sPos.x + (this->getSpritePos().w / 2), sPos.y + (this->getSpritePos().h / 2), 2, 2 }; //(pRect, sPos.x - m_Radius, sPos.y - m_Radius, (textureWidth / 2 + sPos.x), (textureHeight / 2 + sPos.y));
 }
 /*
 =================
@@ -223,7 +223,7 @@ void cSprite::setBoundingRect(SDL_Rect pRect)
 */
 SDL_Rect cSprite::getBoundingRect()		// Return the bounding rectangle for the sprite
 {
-	return cSprite::boundingRect;
+	return this->boundingRect;
 }
 /*
 =================================================================
@@ -267,7 +267,7 @@ bool cSprite::isActive() 						// Determine if the sprite is active.
 =================
 */
 
-bool cSprite::collidedWith(SDL_Rect* thisSpriteRect, SDL_Rect* otherSpriteRect)
+bool cSprite::collidedWith(SDL_Rect* thisSpriteRect, SDL_Rect* otherSpriteRect) //
 {
 	// perform the intersection test
 	if (SDL_HasIntersection(thisSpriteRect, otherSpriteRect))

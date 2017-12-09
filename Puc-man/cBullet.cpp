@@ -24,7 +24,7 @@ Update the sprite position
 void cBullet::update(double deltaTime)
 {
 
-	FPoint direction = { 0.0, 0.0};
+	/*FPoint direction = { 0.0, 0.0};
 	direction.X = (sin((this->getSpriteRotAngle())*PI/180));
 	direction.Y = -(cos((this->getSpriteRotAngle())*PI / 180));
 
@@ -38,9 +38,9 @@ void cBullet::update(double deltaTime)
 	currentSpritePos.x += this->bulletVelocity.x * deltaTime;
 	currentSpritePos.y += this->bulletVelocity.y * deltaTime;
 
-	this->setSpritePos({ currentSpritePos.x, currentSpritePos.y });
+	this->setSpritePos({ currentSpritePos.x, currentSpritePos.y });*/
 
-	cout << "Bullet position - x: " << this->getSpritePos().x << " y: " << this->getSpritePos().y << " deltaTime: " << deltaTime << endl;
+
 
 	this->setBoundingRect(this->getSpritePos());
 

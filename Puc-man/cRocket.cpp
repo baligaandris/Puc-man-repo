@@ -6,6 +6,7 @@ cRocket.cpp
 */
 #include "cRocket.h"
 
+
 /*
 =================================================================
 Defualt Constructor
@@ -22,7 +23,7 @@ Update the sprite position
 =================================================================
 */
 
-void cRocket::update(double deltaTime)
+void cRocket::update(double deltaTime, Node* lastNode, Node* nextNode)
 {
 
 	/*FPoint direction = { 0.0f, 0.0f };
@@ -36,8 +37,14 @@ void cRocket::update(double deltaTime)
 	this->rocketVelocity.y = this->rocketVelocity.y + direction.Y;*/
 
 	//SDL_Rect currentSpritePos = this->getSpritePos();
-	rocketPosition.x += this->rocketVelocity.x * deltaTime;
-	rocketPosition.y += this->rocketVelocity.y * deltaTime;
+	//rocketPosition.x += this->rocketVelocity.x * deltaTime;
+	//rocketPosition.y += this->rocketVelocity.y * deltaTime;
+	if (lastNode!=NULL && nextNode!=NULL)
+	{
+		
+		rocketPosition.x = rocketPosition.x - (lastNode->getSpritePos().x - nextNode->getSpritePos().x)*1*deltaTime;
+		rocketPosition.y = rocketPosition.y - (lastNode->getSpritePos().y - nextNode->getSpritePos().y)*1*deltaTime;
+	}
 
 	//cout << deltaTime << endl
 
@@ -72,6 +79,19 @@ void cRocket::setRocketStartingPosition(int x, int y) {
 	rocketPosition.x = x;
 	rocketPosition.y = y;
 }
+
+float cRocket::lerp(float v0, float v1, float t)
+{
+
+	return (1 - t) * v0 + t * v1;
+}
+
+//void cRocket::setBoundingRect(SDL_Rect pRect)
+//{
+//	SDL_Point sPos = { this->getSpritePos().x, this->getSpritePos().y };
+//	this->boundingRect = { sPos.x+ (this->getSpritePos().w/2), sPos.y+ (this->getSpritePos().h/2), 1, 1}; //(pRect, sPos.x - m_Radius, sPos.y - m_Radius, (textureWidth / 2 + sPos.x), (textureHeight / 2 + sPos.y));
+//
+//}
 
 /*
 =================================================================

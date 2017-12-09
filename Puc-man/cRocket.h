@@ -8,6 +8,7 @@ cRocket.h
 #ifndef _CROCKET_H
 #define _CROCKET_H
 #include "cSprite.h"
+#include "asteroidsGame.h"
 
 class cRocket : public cSprite
 {
@@ -20,11 +21,17 @@ private:
 
 	FPoint rocketPosition;
 
+
 public:
 	cRocket();
-	void update(double deltaTime);		// Rocket update method
+	void update(double deltaTime, Node* lastNode, Node* nextNode);		// Rocket update method
 	void setRocketVelocity(FPoint rocketVel);   // Sets the velocity for the rocket
 	FPoint getRocketVelocity();				 // Gets the rocket velocity
 	void setRocketStartingPosition(int x, int y);
+	/*void setBoundingRect(SDL_Rect pRect);*/
+	float lerp(float v0, float v1, float t);
+	
 };
 #endif
+
+

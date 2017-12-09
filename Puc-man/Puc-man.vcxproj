@@ -137,6 +137,7 @@ xcopy /Y "C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egye
     <ClInclude Include="asteroidsGame.h" />
     <ClInclude Include="cBkGround.h" />
     <ClInclude Include="cBullet.h" />
+    <ClInclude Include="cFileHandler.h" />
     <ClInclude Include="cFont.h" />
     <ClInclude Include="cFontMgr.h" />
     <ClInclude Include="cGame.h" />
@@ -152,6 +153,7 @@ xcopy /Y "C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egye
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsteroidsSDL.cpp" />
+    <ClCompile Include="cFileHandler.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="cBkGround.cpp" />
     <ClCompile Include="cBullet.cpp" />

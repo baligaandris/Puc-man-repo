@@ -21,7 +21,7 @@ private:
 	SDL_Point spriteCentre;
 	FPoint spriteScale;
 	float spriteRotationAngle;
-	SDL_Rect boundingRect;
+	
 	bool mActive;
 	SDL_Point spriteTranslation;
 
@@ -32,8 +32,9 @@ private:
 	int textureWidth;
 	int textureHeight;
 	float lengthSQRD(SDL_Point theLength);
-
+	SDL_Rect boundingRect;
 public:
+
 	cSprite();			// Default constructor
 	cSprite(cTexture* theSpriteTexture);			// Default constructor
 	~cSprite();			// Destructor
@@ -52,7 +53,9 @@ public:
 	void scaleSprite(); // update the sprites width & height
 	float getSpriteRotAngle();  // Return the sprites rotation angle
 	void setSpriteRotAngle(float angle); // set the sprites rotation angle
-	void setBoundingRect(SDL_Rect pRect);		// Determine the bounding rectangle for the sprite
+	void setBoundingRect(SDL_Rect pRect);
+
+	// Determine the bounding rectangle for the sprite
 	SDL_Rect getBoundingRect();		// Get the bounding rectangle for the sprite
 	void setActive(bool sActive);			// Set the sprite to active.
 	bool isActive();						// Determine if the sprite is active.
