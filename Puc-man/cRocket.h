@@ -28,8 +28,6 @@ public:
 	void setRocketVelocity(FPoint rocketVel);   // Sets the velocity for the rocket
 	FPoint getRocketVelocity();				 // Gets the rocket velocity
 	void setRocketStartingPosition(int x, int y);
-	/*void setBoundingRect(SDL_Rect pRect);*/
-	float lerp(float v0, float v1, float t);
 	
 };
 #endif

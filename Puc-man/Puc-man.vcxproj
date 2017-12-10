@@ -149,10 +149,12 @@ xcopy /Y "C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egye
     <ClInclude Include="cTexture.h" />
     <ClInclude Include="cTextureMgr.h" />
     <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="cEnemy.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsteroidsSDL.cpp" />
+    <ClCompile Include="cEnemy.cpp" />
     <ClCompile Include="cFileHandler.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="cBkGround.cpp" />

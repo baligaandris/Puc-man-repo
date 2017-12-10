@@ -34,6 +34,9 @@ public:
 	SDL_Renderer* renderer;
 	int score;
 private:
+	bool pacmanInstantiated = false;
+	SDL_Window* window;
+	vector<cEnemy*> theEnemies;
 	bool getHighScore;
 	int highScore;
 	enum GameState

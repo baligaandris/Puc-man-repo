@@ -13,5 +13,6 @@
 #include "cFontMgr.h"
 #include "cSoundMgr.h"
 #include "cFileHandler.h"
+#include "cEnemy.h"
 
 #endif

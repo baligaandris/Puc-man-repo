@@ -1,15 +1,20 @@
 ﻿  cGame.cpp
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(67): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(66): warning C4018: '<': signed/unsigned mismatch
 c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(74): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(103): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(483): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(513): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(515): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(522): warning C4018: '<': signed/unsigned mismatch
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(724): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(725): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(760): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(765): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(101): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(480): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(570): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(572): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(579): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(596): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(786): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(787): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(829): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(830): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(843): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(853): warning C4018: '<': signed/unsigned mismatch
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(866): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\balig\onedrive - glasgow caledonian university\documents\egyetem\2nd year\games programming 1\puc-man-repo\puc-man\cgame.cpp(869): warning C4305: '=': truncation from 'double' to 'float'
   Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man-repo\Debug\Puc-man.exe
   Puc-man.vcxproj -> C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egyetem\2nd year\Games Programming 1\Puc-man-repo\Debug\Puc-man.pdb (Partial PDB)
   copying SDL2.dll to debug directory
