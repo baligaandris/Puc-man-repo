@@ -62,7 +62,7 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 
 	// Store the textures
 	textureName = { "asteroid1", "asteroid2", "asteroid3", "asteroid4", "bullet","theRocket","theBackground","node","arrowKeys","redSkull","blueSkull","greenSkull","pinkSkull"};
-	texturesToUse = { "Images\\asteroid1.png", "Images\\asteroid2.png", "Images\\asteroid3.png", "Images\\asteroid4.png", "Images\\bullet.png", "Images\\Original_PacMan.png", "Images\\pacman_background.png","Images\\Node.png","Images\\Arrow_Keys.png","Images\\red_skull.png","Images\\blue_skull.png","Images\\green_skull.png","Images\\pink_skull.png"};
+	texturesToUse = { "Images\\asteroid1.png", "Images\\asteroid2.png", "Images\\asteroid3.png", "Images\\asteroid4.png", "Images\\bullet.png", "Images\\Original_PucMan.png", "Images\\pacman_background.png","Images\\Node.png","Images\\Arrow_Keys.png","Images\\red_skull.png","Images\\blue_skull.png","Images\\green_skull.png","Images\\pink_skull.png"};
 	for (int tCount = 0; tCount < textureName.size(); tCount++)
 	{	
 		theTextureMgr->addTexture(textureName[tCount], texturesToUse[tCount]);
@@ -95,9 +95,9 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 	theTextureMgr->addTexture("ReturnToMain", theFontMgr->getFont("spaceAge")->createTextTexture(theRenderer, gameTextList[8], SOLID, { 255, 255, 255, 255 }, { 0, 0, 0, 0 }));
 
 	// Load game sounds
-	soundList = { "theme", "waka", "explosion" };
+	soundList = { "theme", "waka", "death" };
 	soundTypes = { MUSIC, SFX, SFX };
-	soundsToUse = { "Audio/rolemusi_-_09_-_09_rolemusic_-_the_little_broth.wav", "Audio/waka1.wav", "Audio/explosion2.wav" };
+	soundsToUse = { "Audio/rolemusi_-_09_-_09_rolemusic_-_the_little_broth.wav", "Audio/waka1.wav", "Audio/DeathSound.wav" };
 	for (int sounds = 0; sounds < soundList.size(); sounds++)
 	{
 		theSoundMgr->add(soundList[sounds], soundsToUse[sounds], soundTypes[sounds]);
@@ -854,7 +854,7 @@ void cGame::update(double deltaTime)
 		{
 			if (theEnemies[i]->collidedWith(&theEnemies[i]->getBoundingRect(),&thePacman.getBoundingRect()))
 			{
-
+				theSoundMgr->getSnd("death")->play(0);
 				theNodes.clear();
 				theEnemies.clear();
 				thePickups.clear();
