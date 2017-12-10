@@ -37,6 +37,8 @@ cGame* cGame::getInstance()
 
 void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 {
+	//set random seed
+	srand(time(NULL));
 	//set starting values
 	getHighScore = true;
 	window = theSDLWND;
@@ -840,7 +842,7 @@ void cGame::update(double deltaTime)
 								}
 							}
 							int neighbourNumber = rand() % validNeighbours.size();
-							srand(time(NULL));
+							
 							theEnemies[i]->setNextNode(validNeighbours[neighbourNumber]);
 							theEnemies[i]->setLastNode((*col));
 						}
