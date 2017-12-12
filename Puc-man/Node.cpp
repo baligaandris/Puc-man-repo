@@ -13,7 +13,7 @@ Defualt Constructor
 */
 Node::Node() : cSprite()
 {
-	this->asteroidVelocity = { 0, 0 };
+	
 }
 /*
 =================================================================
@@ -23,39 +23,9 @@ Update the sprite position
 
 void Node::update(double deltaTime)
 {
-
-	//this->setSpriteRotAngle(this->getSpriteRotAngle() +(5.0f * deltaTime)); 
-	//if (this->getSpriteRotAngle() > 360)
-	//{
-	//	this->setSpriteRotAngle(this->getSpriteRotAngle() -360);
-	//}
-
-	/*SDL_Rect currentSpritePos = this->getSpritePos();
-	currentSpritePos.x += this->getSpriteTranslation().x * deltaTime;
-	currentSpritePos.y += this->getSpriteTranslation().y * deltaTime;
-
-	this->setSpritePos({ currentSpritePos.x, currentSpritePos.y });*/
-	//cout << "Asteroid position - x: " << this->getSpritePos().x << " y: " << this->getSpritePos().y << " deltaTime: " << deltaTime << endl;
 	this->setBoundingRect(this->getSpritePos());
 }
-/*
-=================================================================
-  Sets the velocity for the Asteroid
-=================================================================
-*/
-void Node::setAsteroidVelocity(SDL_Point AsteroidVel)
-{
-	asteroidVelocity = AsteroidVel;
-}
-/*
-=================================================================
-  Gets the Asteroid velocity
-=================================================================
-*/
-SDL_Point Node::getAsteroidVelocity()
-{
-	return asteroidVelocity;
-}
+
 
 void Node::setNeighbours(Node* up, Node* down, Node* left, Node* right)
 {

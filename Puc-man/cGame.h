@@ -10,7 +10,7 @@ cGame.h
 #include <SDL.h>
 
 // Game specific includes
-#include "asteroidsGame.h"
+#include "PMGame.h"
 #include <sstream>
 
 using namespace std;
@@ -57,15 +57,15 @@ private:
 	// Sprites for displaying background and rocket textures
 	cSprite spriteBkgd;
 	cSprite instructions;
-	cRocket thePacman;
+	cPacMan thePacman;
 	Node theAsteroid;
-	cBullet theBullet;
+	cPickUp theBullet;
 	// game related variables
 	vector<LPCSTR> textureName;
 	vector<LPCSTR> textName;
 	vector<LPCSTR> texturesToUse;
 	vector<vector<Node*>> theNodes;
-	vector<cBullet*> thePickups;
+	vector<cPickUp*> thePickups;
 	// Fonts to use
 	vector<LPCSTR> fontList;
 	vector<LPCSTR> fontsToUse;

@@ -134,14 +134,14 @@ xcopy /Y "C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egye
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="asteroidsGame.h" />
+    <ClInclude Include="PMGame.h" />
     <ClInclude Include="cBkGround.h" />
-    <ClInclude Include="cBullet.h" />
+    <ClInclude Include="cPickUp.h" />
     <ClInclude Include="cFileHandler.h" />
     <ClInclude Include="cFont.h" />
     <ClInclude Include="cFontMgr.h" />
     <ClInclude Include="cGame.h" />
-    <ClInclude Include="cRocket.h" />
+    <ClInclude Include="cPacMan.h" />
     <ClInclude Include="cSDL2WNDManager.h" />
     <ClInclude Include="cSound.h" />
     <ClInclude Include="cSoundMgr.h" />
@@ -158,11 +158,11 @@ xcopy /Y "C:\Users\balig\OneDrive - GLASGOW CALEDONIAN UNIVERSITY\Documents\Egye
     <ClCompile Include="cFileHandler.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="cBkGround.cpp" />
-    <ClCompile Include="cBullet.cpp" />
+    <ClCompile Include="cPickUp.cpp" />
     <ClCompile Include="cFont.cpp" />
     <ClCompile Include="cFontMgr.cpp" />
     <ClCompile Include="cGame.cpp" />
-    <ClCompile Include="cRocket.cpp" />
+    <ClCompile Include="cPacMan.cpp" />
     <ClCompile Include="cSDL2WNDManager.cpp" />
     <ClCompile Include="cSound.cpp" />
     <ClCompile Include="cSoundMgr.cpp" />

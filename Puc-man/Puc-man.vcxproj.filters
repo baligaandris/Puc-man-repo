@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="asteroidsGame.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cBkGround.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cBullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cFont.h">
@@ -31,9 +25,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cGame.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cRocket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cSDL2WNDManager.h">
@@ -66,15 +57,21 @@
     <ClInclude Include="cEnemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="cPacMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PMGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cPickUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsteroidsSDL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cBkGround.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cBullet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cFont.cpp">
@@ -84,9 +81,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cGame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cRocket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cSDL2WNDManager.cpp">
@@ -114,6 +108,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cEnemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cPacMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cPickUp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

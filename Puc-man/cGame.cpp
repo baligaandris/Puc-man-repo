@@ -39,7 +39,7 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 {
 	//set random seed
 	srand(time(NULL));
-	//set starting values
+	//set starting values, store useful varibales
 	getHighScore = true;
 	window = theSDLWND;
 	renderer = theRenderer;
@@ -129,11 +129,9 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 		{
 			theNodes[column].push_back(new Node);
 			theNodes[column][row]->setSpritePos({ 53+ 78* (column), 53+ 79*(row) });
-			//theAsteroids[astro]->setSpriteTranslation({ (rand() % 8 + 1), (rand() % 8 + 1) });
 			int randAsteroid = rand() % 4;
 			theNodes[column][row]->setTexture(theTextureMgr->getTexture("node"));
 			theNodes[column][row]->setSpriteDimensions(theTextureMgr->getTexture("node")->getTWidth(), theTextureMgr->getTexture("node")->getTHeight());
-			//theAsteroids[astro]->setAsteroidVelocity({ 3, 3 });
 			theNodes[column][row]->setActive(true);
 		}
 	}
@@ -412,7 +410,7 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 			{
 				for (size_t i = 1; i < 3; i++) //Starts from one to prevent the pickup to be placed on the node itself to aviod multiple pickups on top of each other we will place that separately
 				{
-					thePickups.push_back(new cBullet);
+					thePickups.push_back(new cPickUp);
 					int newBulletX;
 					int newBulletY;
 					newBulletX = theNodes[column][row]->getSpritePos().x + ((theNodes[column][row]->getNeighbour(2)->getSpritePos().x - theNodes[column][row]->getSpritePos().x) / 3*i);
@@ -433,7 +431,7 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 			{
 				for (size_t i = 1; i < 3; i++)
 				{
-					thePickups.push_back(new cBullet);
+					thePickups.push_back(new cPickUp);
 					int newBulletX;
 					int newBulletY;
 					newBulletX = theNodes[column][row]->getSpritePos().x - ((theNodes[column][row]->getSpritePos().x - theNodes[column][row]->getNeighbour(4)->getSpritePos().x) / 3*i);
@@ -450,7 +448,7 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 			//add a pickup on top of the node if it is not isolated
 			if (theNodes[column][row]->getNeighbour(1)!=NULL || theNodes[column][row]->getNeighbour(2) != NULL || theNodes[column][row]->getNeighbour(3) != NULL || theNodes[column][row]->getNeighbour(4) != NULL)
 			{
-				thePickups.push_back(new cBullet);
+				thePickups.push_back(new cPickUp);
 				int newBulletX;
 				int newBulletY;
 				newBulletX = theNodes[column][row]->getSpritePos().x-1;
@@ -471,7 +469,6 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 	{
 		thePacman.setTexture(theTextureMgr->getTexture("theRocket"));
 		thePacman.setSpriteDimensions(theTextureMgr->getTexture("theRocket")->getTWidth(), theTextureMgr->getTexture("theRocket")->getTHeight());
-		thePacman.setRocketVelocity({ 0, 0 });
 		thePacman.setSpriteScale({ (float)-0.8,(float)-0.8 });
 		thePacman.scaleSprite();
 		pacmanInstantiated = true;
@@ -479,7 +476,7 @@ void cGame::initialise(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 	int rwidth = theTextureMgr->getTexture("theRocket")->getTWidth();
 	int rheight = theTextureMgr->getTexture("theRocket")->getTHeight();
 	thePacman.setSpritePos({ theNodes[3][5]->getSpritePos().x - (rwidth / 10),theNodes[3][5]->getSpritePos().y - (rheight / 10) });
-	thePacman.setRocketStartingPosition(theNodes[3][5]->getSpritePos().x + (theNodes[3][5]->getSpriteDimensions().w / 2) - ((thePacman.getSpriteDimensions().w * 0.2) / 2) + 1, theNodes[3][5]->getSpritePos().y + (theNodes[3][5]->getSpriteDimensions().h / 2) - ((thePacman.getSpriteDimensions().w * 0.2) / 2) + 1);
+	thePacman.setStartingPosition(theNodes[3][5]->getSpritePos().x + (theNodes[3][5]->getSpriteDimensions().w / 2) - ((thePacman.getSpriteDimensions().w * 0.2) / 2) + 1, theNodes[3][5]->getSpritePos().y + (theNodes[3][5]->getSpriteDimensions().h / 2) - ((thePacman.getSpriteDimensions().w * 0.2) / 2) + 1);
 	nextNode = NULL;
 	lastCollision = NULL;
 
@@ -592,7 +589,7 @@ void cGame::render(SDL_Window* theSDLWND, SDL_Renderer* theRenderer)
 		pos = { 250, 10, tempTextTexture->getTextureRect().w, tempTextTexture->getTextureRect().h };
 		scale = { 1, 1 };
 		tempTextTexture->renderTexture(renderer, tempTextTexture->getTexture(), &tempTextTexture->getTextureRect(), &pos, scale);
-		// render the rocket
+		// render the Pac-Man
 		thePacman.render(theRenderer, &thePacman.getSpriteDimensions(), &thePacman.getSpritePos(), thePacman.getSpriteRotAngle(), &thePacman.getSpriteCentre(), thePacman.getSpriteScale());
 		// render the enemies
 		for (int i = 0; i < theEnemies.size(); i++)
@@ -718,7 +715,7 @@ void cGame::update(double deltaTime)
 	if (gameState == Play)
 	{
 		// Update the visibility and position of each pickup
-		vector<cBullet*>::iterator pickupIterator = thePickups.begin();
+		vector<cPickUp*>::iterator pickupIterator = thePickups.begin();
 		while (pickupIterator != thePickups.end())
 		{
 			if ((*pickupIterator)->isActive() == false)
@@ -737,7 +734,7 @@ void cGame::update(double deltaTime)
 		==============================================================
 		*/
 		//Check for collisions between the pickups and the player, and if collided remove the pickup, and increase the score
-		for (vector<cBullet*>::iterator pickupIterator = thePickups.begin(); pickupIterator != thePickups.end(); ++pickupIterator)
+		for (vector<cPickUp*>::iterator pickupIterator = thePickups.begin(); pickupIterator != thePickups.end(); ++pickupIterator)
 		{
 			(*pickupIterator)->update(deltaTime);
 
@@ -766,7 +763,7 @@ void cGame::update(double deltaTime)
 		//prep itarators for the 2d vector of nodes
 		vector<vector<Node*>>::iterator row;
 		vector<Node*>::iterator col;
-		cRocket* pointRocket;
+		cPacMan* pointRocket;
 		pointRocket = &thePacman;
 		SDL_Rect* pRocketColl;
 		pRocketColl = &thePacman.getBoundingRect();
@@ -785,10 +782,11 @@ void cGame::update(double deltaTime)
 						{
 							lastCollision = (*col);
 						}
+						//adjust player position, so it is exactly on top of the node
 						int newX = (*col)->getSpritePos().x + ((*col)->getSpriteDimensions().w / 2) - ((thePacman.getSpriteDimensions().w * 0.2) / 2) + 1;
 						int newY = (*col)->getSpritePos().y + ((*col)->getSpriteDimensions().h / 2) - ((thePacman.getSpriteDimensions().h * 0.2) / 2) + 1;
 						thePacman.setSpritePos({ newX,newY });
-						thePacman.setRocketStartingPosition(newX, newY);
+						thePacman.setStartingPosition(newX, newY);
 						//based on the last input we got, assign the next target of the player
 						if (nextTurn == up)
 						{
@@ -918,6 +916,7 @@ void cGame::update(double deltaTime)
 
 bool cGame::getInput(bool theLoop)
 {
+	//to handle different screens, we will handle input based on gamestate
 	SDL_Event event;
 	if (gameState == Play) {
 		//get input from arrow keys, and store the direction pressed. If the direction is opposite to where the player is moving right now, turn around immediately

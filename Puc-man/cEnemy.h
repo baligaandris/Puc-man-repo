@@ -2,7 +2,7 @@
 #ifndef _CENEMY_H
 #define _CENEMY_H
 #include "cSprite.h"
-#include "asteroidsGame.h"
+#include "PMGame.h"
 
 class cEnemy : public cSprite
 {
